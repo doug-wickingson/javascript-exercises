@@ -1,6 +1,15 @@
-const leapYears = function() {
-
+const leapYears = function(year) {
+	// divisible by 4
+	if (year % 4 === 0) {
+		return true;
+	}
+	// divisible by 100 not leap year
+		// unless also divisible by 400
+	if (year % 100 === 0 && year % 400 === 0) {
+		return true;
+	}
 };
 
 // Do not edit below this line
 module.exports = leapYears;
+
